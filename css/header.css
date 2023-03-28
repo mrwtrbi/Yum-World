@@ -1,0 +1,161 @@
+.header-banniere {
+	display: flex;
+	background: white;
+	align-items: center;
+}
+
+
+#header-banniere-logo {
+	float: left;
+	width: 145px;
+	padding-left: 20px;
+}
+	
+		
+#header-banniere-titre {
+	color: black;
+	font-size: 40px;
+	margin: auto;
+	letter-spacing: 2.5px;
+}
+	
+		
+header {
+	display: block;
+}
+
+
+@media (max-width: 768px) {
+	.header-banniere {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 0;
+	}
+
+	.header-banniere #header-banniere-logo {
+		display: none;
+	}
+
+	.header-menu {
+		padding: 10px;
+	}
+
+	.header-menu ul li a {
+		font-size: 14px;
+	}
+
+	.header-menu ul li a .fa {
+		font-size: 14px;
+	}
+
+	.header-menu {
+		display: none;
+	}
+}
+
+	
+.header-menu {
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	border-bottom: 1px solid #ddd9d9;
+	border-top: 1px solid #ddd9d9;
+}
+
+		
+.header-menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+	
+		
+.header-menu ul li {
+	background: white;
+	width: 150px;
+	margin: 15px;
+	padding: 15px 0px;
+}
+	
+		
+.header-menu ul li a {
+	color: #6c6b6b;
+	font-size: 17px;
+	text-decoration: none;
+}
+	
+		
+.header-menu .fa {
+	margin-right: 15px;
+}
+
+
+.header-sous-menu-1, .header-sous-menu-bag {
+	display: none;
+}
+		
+	
+.header-menu ul li a:hover {
+	color: tomato;
+}
+
+
+.header-menu ul li:hover .header-sous-menu-1 {
+	background: white;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	margin-top: 15px;
+	margin-left: 15px;	
+	border-radius: 5px;		
+}
+
+.header-menu ul li:hover .header-sous-menu-bag ul { 
+	background: white;
+	display: block;
+	margin: 10px;
+}
+		
+		
+.header-menu ul li:hover .header-sous-menu-bag ul li {
+	background: white;
+	text-align: left;
+	padding: 10px;
+}
+
+
+.header-menu ul li:hover .header-sous-menu-bag {
+	background: white;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	margin-top: 15px;
+	margin-left: 15px;	
+	border-radius: 5px;		
+}
+
+	
+.header-menu ul li:hover .header-sous-menu-1 ul {
+	background: white;
+	display: block;
+	margin: 10px;
+}
+	
+		
+.header-menu ul li:hover .header-sous-menu-1 ul li {
+	background: white;
+	text-align: left;
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted black;	
+}
+	
+		
+.header-menu ul li:hover .header-sous-menu-1 ul li:last-child {
+	border-bottom: 0px;
+}
+	
+		
+.header-menu ul li:hover .header-sous-menu-1 ul li a:hover {
+	color: tomato;
+}
