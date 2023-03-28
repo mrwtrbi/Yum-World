@@ -1,0 +1,100 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lucida Console", "Courier New", monospace;
+	box-sizing: border-box;
+}
+					
+body {
+	background-color: white;
+	padding-left: 120px;
+	padding-right: 120px;
+	position: relative;
+}
+
+
+/*MAIN : menu à gauche*/	
+main {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	min-height:100%;
+}
+
+
+.main-menu {
+	background: white;
+	border-right: 1px solid #ddd9d9;
+	width: auto;
+	position: sticky;
+	top: 40px;
+	width: 150px;
+	height: 550px;
+}	
+	
+		
+.main-menu ul {
+	list-style: none;
+	margin-right: 30px;
+}
+	
+		
+.main-menu ul li {
+	text-align: left;
+	width: 140px; 
+	padding: 10px;
+}
+	
+		
+.main-menu ul li a {
+	color: #6c6b6b;
+	text-decoration: none;	
+}
+
+
+.main-menu ul li a:hover {
+	color: tomato;
+}
+
+
+.main-menu .fa {
+	margin-right: 15px;
+}
+
+
+/*MAIN : contenu au centre*/
+#photo {
+	width: 100%;
+	border-radius: 5px;
+	opacity: 0.8;
+	
+}
+	
+	
+.main-content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}	
+
+
+.main-text {
+	background: white;
+	text-align: center;
+	margin-left: 30px;
+	border-radius: 5px;
+	width: 100%;
+}	
+
+/*
+#photo2 {
+	width:100px;
+	border-radius: 5px;
+	background-color: white;
+}*/
+
+
+button {
+	border: none;
+	padding: 3px;
+	background: inherit;
+}
