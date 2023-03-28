@@ -10,11 +10,11 @@
 		<ul>	
 			<li> <a href="index.php"><i class="fas fa-house"></i> Accueil</a></li>
 		
-			<li><a href="#">Afrique</a></li>
-			<li><a href="#">Amérique</a></li>
-			<li><a href="#">Asie</a></li>
-			<li><a href="#">Europe</a></li>
-			<li><a href="#">Océanie</a></li>
+			<li><a href="#"><i class="fa-solid fa-earth-africa"></i> Afrique</a></li>
+			<li><a href="#"><i class="fa-solid fa-earth-americas"></i> Amérique</a></li>
+			<li><a href="#"><i class="fa-solid fa-earth-asia"></i> Asie</a></li>
+			<li><a href="#"><i class="fa-solid fa-earth-europe"></i> Europe</a></li>
+			<li><a href="#"><i class="fa-solid fa-earth-oceania"></i> Océanie</a></li>
 			
 			<li><i class="fa-solid fa-envelope"></i><a> Contact</a></li>
 			
