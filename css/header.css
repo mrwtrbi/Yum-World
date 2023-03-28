@@ -17,40 +17,24 @@
 	font-size: 40px;
 	margin: auto;
 	letter-spacing: 2.5px;
+	align-items: center;
 }
-	
+
+
+.header-banniere-images {
+	float: right;
+	width: 145px;
+	text-decoration: none;
+	color: black;
+}
+
+.header-banniere a:hover {
+	color: tomato;
+}
+
 		
 header {
 	display: block;
-}
-
-
-@media (max-width: 768px) {
-	.header-banniere {
-		display: flex;
-		justify-content: space-between;
-		margin: 20px 0;
-	}
-
-	.header-banniere #header-banniere-logo {
-		display: none;
-	}
-
-	.header-menu {
-		padding: 10px;
-	}
-
-	.header-menu ul li a {
-		font-size: 14px;
-	}
-
-	.header-menu ul li a .fa {
-		font-size: 14px;
-	}
-
-	.header-menu {
-		display: none;
-	}
 }
 
 	
@@ -158,4 +142,8 @@ header {
 		
 .header-menu ul li:hover .header-sous-menu-1 ul li a:hover {
 	color: tomato;
+}
+
+.fa-envelope {
+	color:#6c6b6b;
 }
