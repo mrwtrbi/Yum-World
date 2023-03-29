@@ -77,10 +77,34 @@ header {
 .header-sous-menu-1, .header-sous-menu-bag {
 	display: none;
 }
+
+
+#accueil :hover{
+	color: black;
+}
 		
-	
-.header-menu ul li a:hover {
-	color: tomato;
+#afrique :hover{
+	color: #b81a1a;
+}
+
+#amerique :hover{
+	color: #7ed957;
+}	
+
+#asie :hover{
+	color: #ff914d;
+}	
+
+#europe :hover{
+	color: #004aad;
+}
+
+#oceanie :hover{
+	color: #0cc0df;
+}
+
+#contact :hover{
+	color: black;
 }
 
 
