@@ -13,11 +13,12 @@
 	
 		
 #header-banniere-titre {
-	color: black;
-	font-size: 40px;
+	color: #5284B3;
+	font-size: 50px;
 	margin: auto;
 	letter-spacing: 2.5px;
 	align-items: center;
+	font-family : Perpetua;
 }
 
 
@@ -29,7 +30,7 @@
 }
 
 .header-banniere a:hover {
-	color: #6c6b6b;
+	color: #66AC85;
 }
 
 		
@@ -68,11 +69,6 @@ header {
 	text-decoration: none;
 }
 	
-		
-.header-menu .fa {
-	margin-right: 15px;
-}
-
 #accueil :hover{
 	color: black;
 }
