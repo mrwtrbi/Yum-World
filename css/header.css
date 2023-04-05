@@ -73,12 +73,6 @@ header {
 	margin-right: 15px;
 }
 
-
-.header-sous-menu-1, .header-sous-menu-bag {
-	display: none;
-}
-
-
 #accueil :hover{
 	color: black;
 }
