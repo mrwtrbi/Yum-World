@@ -1,3 +1,16 @@
+#form {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.h2 {
+  margin-bottom: 30%;
+  padding-bottom: 30%;
+
+}
+
 input[type="text"], input[type="email"], input[type="tel"], select {
     width: 70%;
     height: 30px;
@@ -7,4 +20,11 @@ input[type="text"], input[type="email"], input[type="tel"], select {
     width: 70%;
     height: 80px;
   
+  }
+
+  #champs {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
