@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+	<?php
+		include_once("head.php");
+	?>
 	<head>
-		<meta charset="utf-8" />
-		<title>Yum World</title>
-		<link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
-		<link rel="stylesheet" href="../css/style.css">	
-		<link rel="stylesheet" href="../css/header.css">
-		<link rel="stylesheet" href="../css/footer.css">
-		<link rel="stylesheet" href="../css/formulaire.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
-</head>
-
+		<title>YUM WORLD</title>
+	</title>
 
 <body>
 
