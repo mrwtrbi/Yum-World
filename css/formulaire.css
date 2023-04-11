@@ -8,23 +8,32 @@
 .h2 {
   margin-bottom: 30%;
   padding-bottom: 30%;
-
 }
 
 input[type="text"], input[type="email"], input[type="tel"], select {
     width: 70%;
     height: 30px;
+  }
 
-  }
-  .text{
-    width: 70%;
-    height: 80px;
-  
-  }
+.text{
+  width: 70%;
+   height: 80px;
+   padding-top: 5px;
+}
 
   #champs {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
+  }
+
+  #button {
+    border: none;
+    width: 10%;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #6c6b6b;
+    border-radius: 5px;
   }
