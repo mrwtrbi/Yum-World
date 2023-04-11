@@ -35,6 +35,7 @@
             <div class='texte-dessous'>
                 <p class='para'>Description description</p>
                 <p class='para'>15€<br/>
+                <p>- 0 +</p>
             </div>
         </a>
 
@@ -48,6 +49,9 @@
             <div class='texte-dessous'>
                 <p class='para'>Description description</p>
                 <p class='para'>21€<br/>
+            </div>
+            <div class="add">
+                <i class="fa-solid fa-plus"></i><p> 0 </p><i class="fa-solid fa-minus"></i>
             </div>
         </a>
     </div>
