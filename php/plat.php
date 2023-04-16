@@ -5,7 +5,7 @@
 	?>
     <head>
         <title>Votre plat</title>
-        <script src="../JS/recette.js"></script>
+        <script src="../js/recette.js"></script>
     </head>
 
 <body>
