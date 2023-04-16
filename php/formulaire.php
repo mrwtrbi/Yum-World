@@ -13,7 +13,7 @@
         include_once("header.php");
     ?>
     <div id=form>
-        <h2><i class="fas fa-address-book"></i> Demande de contact</h1>
+        <h2><i class="fas fa-address-book"></i>        Demande de contact</h1>
         <br><br>
         <form>
             <fieldset>

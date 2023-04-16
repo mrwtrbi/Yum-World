@@ -22,7 +22,7 @@
 		
 	<div class="main-text">	
 		<p class="main-content">
-Bienvenue sur Yum World !<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			Plat du jour :<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</p>
 
 	</div>
