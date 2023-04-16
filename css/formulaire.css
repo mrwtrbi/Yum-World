@@ -1,8 +1,22 @@
 #form {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+	width: 90%;
+	color: #6c6b6b;
+	background: #f3f3f3;
+	border-radius: 5px;
+	/*text-align: center;*/
+	padding: 2%;
+	border: 1px solid #ddd9d9;
+	transition: 0.2s;
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*align-items: stretch;
+	justify-content: center;*/
+	text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 }
 
 .h2 {
@@ -17,23 +31,25 @@ input[type="text"], input[type="email"], input[type="tel"], select {
 
 .text{
   width: 70%;
-   height: 80px;
-   padding-top: 5px;
+  height: 80px;
+  padding-top: 5px;
 }
 
-  #champs {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
 
-  #button {
-    border: none;
-    width: 10%;
-    height: 30px;
-    cursor: pointer;
-    background-color: white;
-    border: 2px solid #6c6b6b;
-    border-radius: 5px;
-  }
+#champs {
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#button {
+  padding: 1%;
+  border: 1px solid #ddd9d9;
+  border-radius: 5px;
+}
+
+#button:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,139 @@
+#page-produit{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+	width: 90%;
+    /*height: 40em;*/
+	color: #6c6b6b;
+	background: #f3f3f3;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2%;
+	border: 1px solid #ddd9d9;
+	transition: 0.2s;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+#gauche {
+    /*float: left;*/
+    width: 50%;
+    height: 100%;   
+}
+
+#photo {
+    object-fit: cover;
+
+}
+
+#droite {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+#titre {
+    color: black;
+    font-size: large;
+    padding: 3%;
+}
+
+
+#description {
+    padding: 3%;
+    font-style: italic;
+}
+
+
+#bouton-recette {
+    padding: 1.5%;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+}
+
+#bouton-recette:hover {
+    cursor: pointer;
+}
+
+#recette {
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background-color: #f3f3f3;
+    z-index: 12;
+    margin-top: 14em;
+    margin-left: 15em;
+    color: #6c6b6b;
+    border-radius: 5px;
+    /*text-align: center;*/
+    padding: 5px;
+    border: 1px solid #ddd9d9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s;
+}
+
+#recette-contenu {
+    margin: auto;
+    display: flex;
+	flex-direction: row;
+    width: 100%;
+    padding: 5em;
+	/*align-items: stretch;*/
+}
+
+#recette-gauche {
+    width: 95%;
+    text-align: left;
+}
+
+#recette-droite {
+    width: 5%;
+    text-align: right;
+    vertical-align: text-top;
+    align-items: center;
+}
+
+#bouton-fermer {
+    color: black;
+    width: 4em;
+    height: 2em;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+}
+
+#bouton-fermer:hover {
+    cursor: pointer;
+}
+
+#commander {
+    display: flex;
+    padding-top: 3em;
+    padding-left: 8em;
+    width: 100%;
+    align-items: center;
+}
+
+#quantite {
+    text-align: center;
+}
+
+#prix {
+    margin: 7%;
+}
+
+#bouton-panier {
+    padding: 1.5%;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+    text-align: right;
+}
+
+#bouton-panier:hover {
+    cursor: pointer;
+}    
