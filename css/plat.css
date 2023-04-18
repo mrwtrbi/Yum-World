@@ -64,10 +64,10 @@
     display: none;
     position: fixed;
     width: 50%;
-    height: 50%;
+    height: 60%;
     background-color: #f3f3f3;
     z-index: 12;
-    margin-top: 14em;
+    margin-top: 12em;
     margin-left: 15em;
     color: #6c6b6b;
     border-radius: 5px;
@@ -113,27 +113,51 @@
 
 #commander {
     display: flex;
-    padding-top: 3em;
-    padding-left: 8em;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 3em;
     align-items: center;
 }
 
 #quantite {
-    text-align: center;
+    /*text-align: center;*/
+    width: 33%;
 }
 
 #prix {
-    margin: 7%;
+    /*margin: 7%;*/
+    width: 33%;
 }
 
 #bouton-panier {
     padding: 1.5%;
     border: 1px solid #ddd9d9;
     border-radius: 5px;
-    text-align: right;
+    text-align: center;
+    width: 33%;
 }
 
 #bouton-panier:hover {
     cursor: pointer;
-}    
+}
+
+.bouton-pm{
+    padding: 1.5%;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%; 
+}
+
+.bouton-pm:hover{
+    cursor: pointer;
+}
+
+#qtt {
+    width: 30%;
+    border: 1px solid #ddd9d9;
+}
+
+
+
