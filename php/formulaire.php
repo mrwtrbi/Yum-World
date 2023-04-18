@@ -18,7 +18,7 @@
         <form>
             <fieldset>
                 <div id="champs">
-                    <legend>Informations personnelles</legend>
+                    <legend id="infos">Informations personnelles</legend>
                     <br><br>
                     <label><i class="fas fa-user"></i> Nom :* </br></br><input type="text" name="nom" placeholder=" Nom" required></label></br></br>
                     <label><i class="fas fa-user"></i> Prénom :* </br></br><input type="text" name="prenom" placeholder=" Prénom" required></label></br></br>

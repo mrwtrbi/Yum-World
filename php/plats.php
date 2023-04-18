@@ -16,7 +16,7 @@
             <p class='titre'>Recette géniale</p>
                         
             <div class='p1'>	
-                <img id="photo" src=../img/Logo style='width : 200px' onclick=".">
+                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
             </div>
                         
             <div class='texte-dessous'>
@@ -29,7 +29,7 @@
             <p class='titre'>Super plat</p>
                         
             <div class='p1'>	
-                <img id="photo" src=../img/Logo style='width : 200px' onclick=".">
+                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
             </div>
                         
             <div class='texte-dessous'>
@@ -42,7 +42,7 @@
             <p class='titre'>Super plat</p>
                         
             <div class='p1'>	
-                <img id="photo" src=../img/Logo style='width : 200px' onclick=".">
+                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
             </div>
                         
             <div class='texte-dessous'>
