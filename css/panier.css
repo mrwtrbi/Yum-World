@@ -1,0 +1,83 @@
+#panier {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+	width: 90%;
+	color: #6c6b6b;
+	background: #f3f3f3;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2%;
+	border: 1px solid #ddd9d9;
+	transition: 0.2s;
+	display: flex;
+	/*flex-direction: row;*/
+	align-items: stretch;
+	/*justify-content: center;*/
+	text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+#panier-gauche{
+    width: 70%;
+    height: 100%; 
+    border: 1px solid #ddd9d9;
+    margin: 1em;
+}
+
+#panier-droite{
+    width: 30%;
+    height: auto;
+    border: 1px solid #ddd9d9;
+    margin: 1em;
+}
+
+.articles-panier{
+    width: 80%;
+    height: 5em;
+    /*border: solid;*/
+    margin: 0.9em;
+    padding: 0.5em;
+    display: flex;
+
+}
+
+/*.articles-panier > *{
+    border:1px solid red;
+}*/
+
+#total1{
+    /*border: 1px solid;*/
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 1em;
+    margin-top: 10em;
+}
+
+.nom-produit{
+   width: 45em;
+   margin-left: 2em;
+   /*margin-right: 4em;*/
+   align-self: center;
+}
+
+.boutons{
+    width: 1em;
+    align-self: center;
+}
+
+.quant {
+    /*border: 1px solid red;*/
+    width: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    align-self: center;
+}
+
+.pu{
+   width: 20em;
+   margin-left: 15em;
+   margin-right: 2em;
+   align-self: center;
+}
