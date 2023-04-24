@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/formulaire.css">
     <link rel="stylesheet" href="../css/plats.css">
     <link rel="stylesheet" href="../css/plat.css">
+    <link rel="stylesheet" href="../css/panier.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
     
 </head>

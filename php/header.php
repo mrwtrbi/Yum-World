@@ -2,7 +2,7 @@
 	<div class="header-banniere">
 		<img id="header-banniere-logo" src="../img/Logo.png" alt="Logo">
 		<h2 id="header-banniere-titre">Yum World</h2>
-		<a href="#" class="header-banniere-images"><i class="fas fa-cart-shopping"></i> Panier</a>
+		<a href="panier.php" class="header-banniere-images"><i class="fas fa-cart-shopping"></i> Panier</a>
 		<a href="#" class="header-banniere-images"><i class="fa-solid fa-user"></i> Connexion</a>
 	</div>
 		

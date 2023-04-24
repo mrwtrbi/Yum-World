@@ -26,11 +26,11 @@
     
     <div id="page-produit">
 
-        <div id="gauche">
+        <div id="plat-gauche">
         <img id="photo" src="../img/couscous"  onclick=".">
         </div>
 
-        <div id="droite">
+        <div id="plat-droite">
 
             <p id="titre">Couscous apétissant</p>
             <p id="description">Voici notre super couscous apétissant, qui épatera vos convives. A déguster sans modération !</p>
