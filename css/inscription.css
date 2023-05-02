@@ -18,3 +18,9 @@
       text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   }
+  #oeil1 {
+    position: relative;
+    top: 3px;
+    right: 30px;
+    cursor: pointer;
+  }
