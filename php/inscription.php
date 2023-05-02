@@ -10,7 +10,7 @@
     <?php
 		include_once("header.php");
 	?>
-    <div id=form>
+    <div id=form2>
 	<h1>Créer un compte</h1>
 	<form>
 		<label>Prénom:</label><br>
