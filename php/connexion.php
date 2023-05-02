@@ -22,7 +22,7 @@
         <div>
 		<input type="password" id="password" name="password">
         
-        <i class="fas fa-eye toggle-password" ></i><br><br>
+        <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
         </div>
 		<input type="submit" value="Connexion">
         
