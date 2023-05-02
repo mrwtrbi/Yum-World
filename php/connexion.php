@@ -13,9 +13,9 @@
         include_once("header.php");
     ?>
     
-    <div id=form>
+    <div id=forme>
 	<h1>Connexion</h1>
-	<form  action="../php/connexion.php" id="connexion-form">
+	<form id="connexion-form">
 		<label>Nom d'utilisateur ou adresse e-mail:</label><br>
 		<input type="text" id="username" name="username" ><br>
 		<label>Mot de passe:</label><br>
