@@ -25,7 +25,7 @@
 		<input type="password" id="password" name="password">
 		<i class="fas fa-eye toggle-password" id= "oeil1"></i><br><br>
 		</div>
-		,
+		
 		<input type="submit" value="Validation">
 	</form>
     </div>
