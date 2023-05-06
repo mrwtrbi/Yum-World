@@ -1,4 +1,4 @@
-#forme {
+#form {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -19,14 +19,18 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   }
 
-  #oeil {
+  /*.toggle-password {
     position: relative;
-    top: 3px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-  }
+  }*/
  
-
-  
+  .toggle-password i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
   
   

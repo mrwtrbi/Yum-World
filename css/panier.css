@@ -22,15 +22,27 @@
 #panier-gauche{
     width: 70%;
     height: 100%; 
-    border: 1px solid #ddd9d9;
+    border: 3px solid #ddd9d9;
     margin: 1em;
+    border-radius: 5px;
+    color: #6c6b6b;
+    background: #f3f3f3;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 
 #panier-droite{
     width: 30%;
     height: auto;
-    border: 1px solid #ddd9d9;
+    border: 3px solid #ddd9d9;
     margin: 1em;
+    border-radius: 5px;
+    color: #6c6b6b;
+    background: #f3f3f3;
+    border-radius: 5px;
+    transition: 0.2s;
+    padding: 2em;
+    text-align: right;
 }
 
 .articles-panier{
@@ -40,7 +52,17 @@
     margin: 0.9em;
     padding: 0.5em;
     display: flex;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+    color: #6c6b6b;
+    background: #f3f3f3;
+    border-radius: 5px;
+    transition: 0.2s;
+}
 
+.articles-panier:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border: none;
 }
 
 /*.articles-panier > *{
@@ -62,9 +84,18 @@
    align-self: center;
 }
 
-.boutons{
+.boutonspm{
     width: 1em;
+    height: 1em;
     align-self: center;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boutonspm:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .quant {
@@ -80,4 +111,17 @@
    margin-left: 15em;
    margin-right: 2em;
    align-self: center;
+}
+
+#bouton-achat {
+    color: black;
+    width: 10em;
+    height: 3em;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+}
+
+#bouton-achat:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }

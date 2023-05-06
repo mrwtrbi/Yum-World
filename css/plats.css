@@ -36,12 +36,17 @@
 	align-items: stretch;
 	justify-content: center;
 	text-decoration: none;
+	
 }
 
+.produit a{
+	text-decoration: none;
+}
 
 .produit:hover {
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border: none;
+	transform: scale(1.05);
 }
 
 .a {
@@ -66,7 +71,32 @@
 	margin: 5px;
 }
 
-.produits {
+.liste_produits {
 	display: flex;
+	flex-direction: row;
 	text-align: center;
+	border: 1px solid ;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.liste_produits > *{
+	display: flex;
+	flex: 0 1 20%;
+
+}
+
+.photo_plat{
+	object-fit: cover;
+	width: 100%;
+}
+
+.area_long{
+	width: 100%;
+	height: 10em;
+	text-align: left;
+}
+
+#ajouterplat_form input{
+	width: 100%;
 }

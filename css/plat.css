@@ -1,4 +1,4 @@
-#page-produit{
+#page-produit, #description{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -18,6 +18,22 @@
 	justify-content: center;
 	text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+#description{
+    justify-content: left;
+}
+
+#description p{
+    text-align: left;
+    padding: 1em;
+    border-right: 1px solid;
+}
+
+#desc_left{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
 }
 
 #plat-gauche {
@@ -44,10 +60,6 @@
 }
 
 
-#description {
-    padding: 3%;
-    font-style: italic;
-}
 
 
 #bouton-recette {
@@ -58,6 +70,7 @@
 
 #bouton-recette:hover {
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 #recette {
@@ -76,6 +89,8 @@
     border: 1px solid #ddd9d9;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.2s;
+    flex-direction: column;
+   
 }
 
 #recette-contenu {
@@ -93,10 +108,11 @@
 }
 
 #recette-droite {
-    width: 5%;
+    width: 100%;
     text-align: right;
     vertical-align: text-top;
     align-items: center;
+    
 }
 
 #bouton-fermer {
@@ -105,10 +121,12 @@
     height: 2em;
     border: 1px solid #ddd9d9;
     border-radius: 5px;
+   
 }
 
 #bouton-fermer:hover {
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 #commander {
@@ -131,15 +149,26 @@
 }
 
 #bouton-panier {
-    padding: 1.5%;
+    padding: 1em;
+    white-space: normal;
     border: 1px solid #ddd9d9;
     border-radius: 5px;
     text-align: center;
     width: 33%;
+  
+    transition: 0.2s;
+
 }
 
 #bouton-panier:hover {
     cursor: pointer;
+    transform: scale(1.05);
+    color: white;
+    background-color: #5284B3;
+}
+
+#bouton-panier:active{
+    background-color:#85b8e7;
 }
 
 .bouton-pm{
@@ -152,6 +181,7 @@
 
 .bouton-pm:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 #qtt {
@@ -161,3 +191,23 @@
 
 
 
+#close_but{
+    color: black;
+    font-size: 1.5em;
+    
+    transition: transform 0.3s ease-out;
+
+}
+
+#close_but:hover{
+  
+    transform: rotate(90deg);
+    cursor: pointer;
+    color: rgb(55, 139, 175);
+ 
+}
+
+.video_recette{
+   padding: 1em;
+   flex-grow: 1;
+}
