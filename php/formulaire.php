@@ -5,6 +5,8 @@
 	?>
     <head>
         <title>Nous contacter</title>
+        <script src="../js/formulaire.js"></script>
+
     </head>
 
 <body>
@@ -15,10 +17,10 @@
     <div id=form>
         <h2><i class="fas fa-address-book"></i>        Demande de contact</h1>
         <br><br>
-        <form>
+        <form onsubmit="return validerFormulaire()">
             <fieldset>
                 <div id="champs">
-                    <legend id="infos">Informations personnelles</legend>
+                    <legend>Informations personnelles</legend>
                     <br><br>
                     <label><i class="fas fa-user"></i> Nom :* </br></br><input type="text" name="nom" placeholder=" Nom" required></label></br></br>
                     <label><i class="fas fa-user"></i> Prénom :* </br></br><input type="text" name="prenom" placeholder=" Prénom" required></label></br></br>
