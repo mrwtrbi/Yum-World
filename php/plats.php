@@ -11,48 +11,53 @@
     <?php
         include_once("header.php");
     ?>
-    <div class="produits">
-        <a class='produit' href="plat.php">
-            <p class='titre'>Recette géniale</p>
-                        
-            <div class='p1'>	
-                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
-            </div>
-                        
-            <div class='texte-dessous'>
-                <p class='para'>Description description</p>
-                <p class='para'>12€<br/>
-            </div>
-        </a>
+    <div class="liste_produits">
 
-        <a class='produit' href="plat.php">
-            <p class='titre'>Super plat</p>
-                        
-            <div class='p1'>	
-                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
-            </div>
-                        
-            <div class='texte-dessous'>
-                <p class='para'>Description description</p>
-                <p class='para'>15€<br/>
-            </div>
-        </a>
+        <?php
+             $sql = "SELECT * FROM Plat WHERE continent='".$_GET["c"]."'";
+             $result = $conn->query($sql);
 
-        <a class='produit' href="plat.php">
-            <p class='titre'>Super plat</p>
-                        
-            <div class='p1'>	
-                <img id="photo" src=../img/couscous style='width : 200px' onclick=".">
-            </div>
-                        
-            <div class='texte-dessous'>
-                <p class='para'>Description description</p>
-                <p class='para'>21€<br/>
-            </div>
-        </a>
+               
+             if($result->num_rows > 0) {
+      
+                while($row = $result->fetch_assoc()) { 
+
+                    if(is_dir($row["photos"])){
+                        $tab_img=scandir($row["photos"]);
+                    }
+
+                 
+
+                    echo "<div class='produit'>
+                        <a  href='plat.php?id=".$row["id"]."'>
+                        <p class='titre'>".$row["nom"]."</p>
+                        <br>
+                        <p class='titre'><i>".$row["pays"]."</i></p>
+                                    
+                        <div class='p1'>	
+                            <img class='photo_plat' src='".$row["photos"]."/".$tab_img[2]."'  onclick=''>
+                        </div>
+                                    
+                        <div class='texte-dessous'>
+                     
+                            <p class='para'>".$row["prix"]." €<br/>
+                        </div>
+                        </a>
+                    </div>";
+                }
+             } 
+     
+             else {
+                echo "0 résultat!";
+             }
+        ?>
+        
+
+
     </div>
     <?php
         include_once("footer.php");
+        $conn->close();
     ?>
 
 </body>

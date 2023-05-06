@@ -11,7 +11,7 @@
     <?php
         include_once("header.php");
     ?>
-    <div id=form1>
+    <div id=form>
 	<h1>Mot de passe oublié</h1>
 	<p>Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.</p>
 	<form>

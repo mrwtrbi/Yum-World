@@ -5,24 +5,24 @@
 	?>
 <head>
 	<title>Page de connexion</title>
-    
+    <script src="../js/connexion.js"></script>
 </head>
 <body>
     
     <?php
         include_once("header.php");
-    ?> 
-    <script src="../js/connexion.js"></script>
-    <div id=forme>
+    ?>
+    
+    <div id=form>
 	<h1>Connexion</h1>
-	<form  id="connexion-form">
+	<form  action="../php/connexion.php" id="connexion-form">
 		<label>Nom d'utilisateur ou adresse e-mail:</label><br>
 		<input type="text" id="username" name="username" ><br>
 		<label>Mot de passe:</label><br>
         <div>
 		<input type="password" id="password" name="password">
         
-        <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
+        <i class="fas fa-eye toggle-password" ></i><br><br>
         </div>
 		<input type="submit" value="Connexion">
         
