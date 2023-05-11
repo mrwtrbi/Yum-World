@@ -11,13 +11,13 @@
     <?php
         include_once("header.php");
     ?>
-    <div id=form>
-	<h1>Mot de passe oublié</h1>
-	<p>Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.</p>
+    <div id=form1>
+	<h1>Mot de passe oublié</h1><br><br>
+	<p>Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.</p><br><br>
 	<form>
 		<label>Adresse e-mail:</label><br>
 		<input type="email" id="email" name="email" placeholder="Adresse e-mail"><br><br>
-		<input type="submit" value="Envoyer">
+		<input type="submit" value="Envoyer"><br><br>
 	</form>
 	<p><a href="../php/connexion.php">Retour à la page de connexion</a></p>
     </div>

@@ -5,26 +5,27 @@
 	?>
 <head>
 	<title>Page de connexion</title>
-    <script src="../js/connexion.js"></script>
+    
 </head>
-<body>
+<body id="corps">
     
     <?php
         include_once("header.php");
-    ?>
-    
-    <div id=form>
-	<h1>Connexion</h1>
-	<form  action="../php/connexion.php" id="connexion-form">
+    ?> 
+    <script src="../js/connexion.js"></script>
+    <div id=forme>
+	<h1>Connexion</h1><br><br>
+	<form  id="connexion-form">
 		<label>Nom d'utilisateur ou adresse e-mail:</label><br>
-		<input type="text" id="username" name="username" ><br>
+        
+		<input type="text" id="username" name="username" ><br><br>
 		<label>Mot de passe:</label><br>
         <div>
 		<input type="password" id="password" name="password">
         
-        <i class="fas fa-eye toggle-password" ></i><br><br>
+        <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
         </div>
-		<input type="submit" value="Connexion">
+		<input type="submit" value="Connexion"><br><br>
         
 	</form>
 	<p><a href="../php/motDePasseOublie.php">Mot de passe oublié?</a></p></br>

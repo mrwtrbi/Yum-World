@@ -10,17 +10,22 @@
     <?php
 		include_once("header.php");
 	?>
-    <div id=form>
-	<h1>Créer un compte</h1>
+	<script src="../js/inscription.js"></script>
+    <div id=form2>
+	<h1>Créer un compte</h1><br><br>
 	<form>
 		<label>Prénom:</label><br>
-		<input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prenom" required><br>
+		<input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prenom" required><br><br>
 		<label>Nom:</label><br>
-		<input type="text" id="lastname" name="lastname" placeholder="Entrez votre Nom"><br>
+		<input type="text" id="lastname" name="lastname" placeholder="Entrez votre Nom"><br><br>
 		<label>Adresse e-mail:</label><br>
-		<input type="email" id="email" name="email" placeholder="Entrez votre Adresse e-mail"><br>
+		<input type="email" id="email" name="email" placeholder="Entrez votre Adresse e-mail"><br><br>
+		<div>
 		<label>Mot de passe:</label><br>
-		<input type="password" id="password" name="password"><br><br>
+		<input type="password" id="password" name="password">
+		<i class="fas fa-eye toggle-password" id= "oeil1"></i><br><br>
+		</div>
+		
 		<input type="submit" value="Validation">
 	</form>
     </div>
