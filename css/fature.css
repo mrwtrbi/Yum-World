@@ -1,0 +1,66 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.facture {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2C3E50;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2C3E50;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+thead {
+  background-color: #34495E;
+  color: #fff;
+}
+
+tfoot {
+  background-color: #BDC3C7;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #ECF0F1;
+}
+
+tr:hover {
+  background-color: #AAB7B8;
+}
+
+.logo {
+  width: 150px; /* Ajustez la largeur de l'image si nécessaire */
+  height: auto; /* Conserve le ratio hauteur/largeur de l'image */
+  display: flex;
+  flex-shrink: 0;
+}
