@@ -24,8 +24,12 @@
                             
                         </div>
                     <div id='recette-contenu'>
-                        <p id='recette-gauche'>".$row["recette"]."</p>
-                        
+                        <div class='recette-gauche'>
+                            <p>Ingrédients :</p><br>
+                            <p>".$row["ingredients"]."</p>
+                            <p>Préparation :</p><br>
+                            <p>".$row["recette"]."</p>
+                        </div>
                     </div>
                 </div>
                 ";
@@ -67,8 +71,7 @@
             
                     <div id='plat-droite'>
             
-                        <p id='titre'>".$row["nom"]."</p>
-                     
+                        <h2 id='titre'>".$row["nom"]."</h2>
                         <input id='bouton-recette' type='button' value='Voir les étapes de préparation' onclick='recette()'> 
                         <div id='commander'>
                             <div id='quantite'>

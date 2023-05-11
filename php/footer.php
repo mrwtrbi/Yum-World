@@ -16,14 +16,14 @@
 	<ul>
 		<li><a href="#"><i class="fa-solid fa-lock"></i> Politique de confidentialité</a></li>
 		<li><a href="#"><i class="fa-solid fa-house-circle-check"></i> Hébergeur du site</a></li>
-		<li><a href="#"><i class="fa-solid fa-lightbulb"></i> Conceptrices du site</a></li>
+		<li><a href="conceptrices.php"><i class="fa-solid fa-lightbulb"></i> Conceptrices du site</a></li>
 	</ul>
 	</div>
 
 	<div class="colonne">
 	<h3>Nous contacter</h3>
 	<ul>
-		<li><a href="#"><i class="fa-solid fa-lightbulb"></i> Conceptrices</a></li>
+		<li><a href="conceptrices.php"><i class="fa-solid fa-lightbulb"></i> Conceptrices</a></li>
 		<li><a href="#"><i class="fa-solid fa-briefcase"></i> Société</a></li>
 		<li><a href="#"><i class="fa-solid fa-globe"></i> Yum World</a></li>
 	</ul>
