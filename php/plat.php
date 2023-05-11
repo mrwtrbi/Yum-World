@@ -85,7 +85,7 @@
 
                 <div id='description'>
                     <div id='desc_left'>
-                        <h2>Description du plat</h2>
+                        <h2>Description du plat</h2> 
                         <p>".$row["description"]." </p>
                     </div>
                     <div id='desc_left'>

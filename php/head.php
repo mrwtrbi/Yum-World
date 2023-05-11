@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $servername = "localhost";
     $username = "root";
     $password = "cytech0001";
@@ -12,7 +13,15 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
+    if(isset($_SESSION["connexion"])&&($_SESSION["connexion"]==1)){
+        echo $_SESSION["idUser"];
+    }
 
+    else{
+        $_SESSION["connexion"]=0;
+    }
+
+   
     
 ?>
 
@@ -28,6 +37,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/connexion.css">
+    <link rel="stylesheet" href="../css/moncompte.css">
     <link rel="stylesheet" href="../css/formulaire.css">
     <link rel="stylesheet" href="../css/plats.css">
     <link rel="stylesheet" href="../css/plat.css">
@@ -36,5 +46,9 @@
     <link rel="stylesheet" href="../css/inscription.css">
     <link rel="stylesheet" href="../css/motDePasseOublie.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
+    <script src="../js/connexion.js"></script>
+    <script src="../js/formulaire.js"></script>
+    <script src="../js/inscription.js"></script>
+    <script src="../js/recette.js"></script>
     
 </head>
