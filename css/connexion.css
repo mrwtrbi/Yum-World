@@ -1,34 +1,30 @@
 #forme {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-      width: 70%;
-      color: #6c6b6b;
-      /*background: #f3f3f3;*/
-      border-radius: 5px;
-      /*text-align: center;*/
-      padding: 2%;
-      border: 1px solid #ddd9d9;
-      transition: 0.2s;
-      /*display: flex;*/
-      /*flex-direction: row;*/
-      /*align-items: stretch;
-      justify-content: center;*/
-      text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+    width: 70%;
+    color: #6c6b6b;
+    /*background: #f3f3f3;*/
+    border-radius: 5px;
+    /*text-align: center;*/
+    padding: 2%;
+    border: 1px solid #ddd9d9;
+    transition: 0.2s;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: stretch;
+    justify-content: center;*/
+    text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
 
-  #oeil {
-    position: relative;
-    top: 3px;
-    right: 30px;
-    cursor: pointer;
-  }
- #corps{
-  background-color: #228B22;
- }
+#oeil {
+  position: relative;
+  top: 3px;
+  right: 30px;
+  cursor: pointer;
+}
 
-  
   
   

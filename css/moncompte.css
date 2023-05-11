@@ -1,0 +1,15 @@
+#mc_infos{
+  
+    width: 100%;
+    padding: 2em;
+    background: url("../img/fondcompte.jpg") ;
+    background-size: cover;
+    background-position: 0px -580px;
+    color: white;
+    border-radius: 5px;
+  
+}
+
+#mc_Nom{
+    font-size: 2em;
+}

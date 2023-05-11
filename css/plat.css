@@ -34,6 +34,13 @@
     display: flex;
     width: 50%;
     flex-direction: column;
+    
+}
+
+#desc_left p {
+    text-align: justify;
+    text-justify:auto;
+  
 }
 
 #plat-gauche {
@@ -211,3 +218,7 @@
    padding: 1em;
    flex-grow: 1;
 }
+
+/*a {
+    color: black;
+}*/

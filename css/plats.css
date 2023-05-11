@@ -69,15 +69,22 @@
 
 .para {
 	margin: 5px;
+	color : black;
 }
 
 .liste_produits {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	border: 1px solid ;
+	/*border: 1px solid ;*/
 	flex-wrap: wrap;
 	justify-content: center;
+	background-image: url("../img/fonds/Fond.png");
+	background-size: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(255,255,255,0.1);
 }
 
 .liste_produits > *{
