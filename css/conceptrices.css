@@ -1,0 +1,28 @@
+.conceptrices {
+    display: flex;
+  }
+  
+.image-conceptrices {
+    flex: 1;
+}
+
+.image-conceptrices img {
+    width: 90%;
+}
+
+.text-conceptrices {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo-cy-tech {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cy-tech img {
+    max-width: 100%;
+    max-height: 100%;
+}
