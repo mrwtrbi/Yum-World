@@ -15,7 +15,7 @@
         include_once("header.php");
     ?>
     <div id=form>
-        <h2><i class="fas fa-address-book"></i>        Demande de contact</h1>
+        <div id="haut-bleu"><h2><i class="fas fa-address-book"></i>        Demande de contact</h1></div>
         <br><br>
         <form onsubmit="return validerFormulaire()">
             <fieldset>

@@ -14,11 +14,15 @@
     }
 
     if(isset($_SESSION["connexion"])&&($_SESSION["connexion"]==1)){
-        echo $_SESSION["idUser"];
+        /*echo $_SESSION["idUser"];*/
     }
 
     else{
         $_SESSION["connexion"]=0;
+    }
+
+    if(isset($_SESSION["idPanier"])){
+        /*echo "| ".$_SESSION["idPanier"];*/
     }
 
    
@@ -44,6 +48,7 @@
     <link rel="stylesheet" href="../css/panier.css">
     <link rel="stylesheet" href="../css/connexion.css">
     <link rel="stylesheet" href="../css/inscription.css">
+    <link rel="stylesheet" href="../css/facture.css">
     <link rel="stylesheet" href="../css/motDePasseOublie.css">
     <link rel="stylesheet" href="../css/conceptrices.css">
     <link rel="stylesheet" href="../css/facture.css">

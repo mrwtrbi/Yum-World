@@ -82,7 +82,7 @@
 		<i class="fas fa-eye toggle-password" id= "oeil1"></i><br><br>
 		</div>
 		
-		<input type="submit" name="submit_but" value="Validation" style="color: black; width: 10em; height: 3em; border: 2px solid #ddd9d9; border-radius: 5px;">
+		<input type="submit" name="submit_but" value="Validation">
 	</form>
     </div>
     <?php

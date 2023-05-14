@@ -3,7 +3,19 @@
 		<img id="header-banniere-logo" src="../img/Logo.png" alt="Logo">
 		<h2 id="header-banniere-titre">Yum World</h2>
 		<a href="panier.php" class="header-banniere-images"><i class="fas fa-cart-shopping"></i> Panier</a>
-		<a href="connexion.php" class="header-banniere-images"><i class="fa-solid fa-user"></i> Connexion</a>
+		<?php 
+			if(isset($_SESSION["connexion"])){
+				if($_SESSION["connexion"]==1){
+					echo "<a href='moncompte.php' class='header-banniere-images'><i class='fa-solid fa-user'></i> Mon Compte</a>";
+				}
+
+				else{
+					echo "<a href='connexion.php' class='header-banniere-images'><i class='fa-solid fa-user'></i> Connexion</a>";
+				}
+			}
+		
+		?>
+		
 	</div>
 		
 	<div class="header-menu">

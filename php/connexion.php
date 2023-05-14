@@ -56,7 +56,7 @@
         
         <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
         </div>
-		<input type="submit" name='co_but' value="Connexion" style="color: black; width: 10em; height: 3em; border: 1px solid #ddd9d9; border-radius: 5px;"><br><br>
+		<input type="submit" name='co_but' value="Connexion"><br><br>
         
 	</form>
 	<p><a href="../php/motDePasseOublie.php">Mot de passe oublié?</a></p></br>

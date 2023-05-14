@@ -2,6 +2,83 @@
 <html lang="en">
     <?php
 		include_once("head.php");
+
+        if(isset($_POST["ajout_pan"])&&isset($_GET["id"])){
+            $qty=$_POST["qtt_plat"];
+            $exist=1;
+
+            if($qty > 0){
+                //On regarde si le plat qu'il ajoute est déjà dans son panier
+                $sql = "SELECT * FROM Commande_item Ci, Commande Co WHERE Ci.idCommande=Co.id AND Co.idUser='".$_SESSION["idUser"]."' AND Ci.idPlat='".$_GET["id"]."'";
+
+                $result = $conn->query($sql);
+   
+                if($result->num_rows > 0) {
+                    
+                    //Si oui, on retient l'id panier (unique à chaque utilisateur)
+                   while($row = $result->fetch_assoc()) { 
+                        echo "deja ajouté";
+                        $num_panier=$row["idCommande"];
+                   }
+                }
+                else{
+                    $exist=0;
+                }   
+
+                    //Si le plat n'est pas déja dans son panier, on crée la ligne dans commande_item 
+                if($exist==0){
+                    $sql = "INSERT INTO Commande_item(idCommande,idPlat, quantite) VALUES ('".$_SESSION["idPanier"]."','".$_GET["id"]."', ".$qty.")";
+                    $result = $conn->query($sql);
+
+                    if ($result === TRUE) {
+                        echo "\nNew record created successfully";
+                    
+                    } 
+                    
+                    else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+
+                    
+
+                }
+                //Sinon on met à jour la quantité
+                else{
+                    $sql = "UPDATE Commande_item SET quantite=quantite+$qty WHERE idPlat='".$_GET["id"]."' AND idCommande='".$num_panier."'";
+
+                    $result = $conn->query($sql);
+
+                    if ($result === TRUE) {
+                        echo "\nNew quantite updated successfully";
+                    
+                    } 
+                    
+                    else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+                }
+
+                // On met à jour la quantité du plat ajouté au panier
+                $sql = "UPDATE Plat SET stock=stock-".$qty." WHERE id='".$_GET["id"]."'";
+                $result = $conn->query($sql);
+
+                if ($result === TRUE) {
+                    echo "\nNew record created successfully";
+                
+                } 
+                
+                else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+
+                header("Location: panier.php");
+
+                
+            }
+            else{
+                echo "Veuillez ajouter au moins une unité";
+            }
+        }
 	?>
     <head>
         <title>Votre sélection</title>
@@ -73,15 +150,20 @@
             
                         <h2 id='titre'>".$row["nom"]."</h2>
                         <input id='bouton-recette' type='button' value='Voir les étapes de préparation' onclick='recette()'> 
-                        <div id='commander'>
-                            <div id='quantite'>
-                                <input class='bouton-pm' type='button' value='-' onclick='quantite()'> 
-                                <input id='qtt' type='text'>
-                                <input class='bouton-pm' type='button' value='+' onclick='quantite()'> 
+                        <form method='POST'>
+                            <div id='commander'>
+                                <div id='quantite'>
+                                    <input class='bouton-pm' type='button' value='-' onclick='quantite(1)'> 
+                                    <input id='qtt_plat' name='qtt_plat' readonly='readonly' type='text' value='0'>
+                                    <input class='bouton-pm' type='button' value='+' onclick='quantite(2)'> 
+                                
+                                </div>
+                                <p id='prix'>".$row["prix"]." €</p>
+                                <input id='bouton-panier' type='submit' name='ajout_pan' value='Ajouter au panier'>
                             </div>
-                            <p id='prix'>".$row["prix"]." €</p>
-                            <input id='bouton-panier' type='button' value='Ajouter au panier'>
                         </div>
+
+                        <p style='text-align:left;'>Stock : <span id='REALSTOCK'> ".$row["stock"]."</span></p>
         
                     </div>
                 </div>

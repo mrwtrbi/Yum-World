@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <?php
-		include_once("head.php");
-	?>
-<head>
-    <!--<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/fature.css">-->
-    <title>Facture</title>
-</head>
+<?php
+    include_once("head.php");
+
+?>
 <body>
     <?php
         include_once("header.php");
     ?>
+
     <div class="facture">
       <img id="header-banniere-logo" src="../img/Logo.png" alt="Logo" class="logo">
-        <h1 id="titre-facture">Facture</h1>
+        <h1>Facture</h1>
         <div class="details">
             <div class="entreprise">
-                <h2 class="fac-titre">Yum World</h2>
+                <h2>Yum World</h2>
                 <p>Avenue du parc</p>
                 <p>95800, Cergy</p>
             </div>
-            <div class="client">
-                <h2 class="fac-titre">Nom du client</h2>
-                <p>Adresse</p>
-                <p>Code postal, Ville</p>
-            </div>
+            
         </div>
         <table>
             <thead>
                 <tr>
-                    <th class="liste">Produit</th>
-                    <th class="liste">Quantité</th>
-                    <th class="liste">Prix unitaire</th>
-                    <th class="liste">Total</th>
+                    <th>Produit</th>
+                    <th>Quantité</th>
+                    <th>Prix unitaire</th>
+                    <th>Total</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="liste">Produit 1</td>
-                    <td class="liste">2</td>
-                    <td class="liste">100 €</td>
-                    <td class="liste">200 €</td>
-                </tr>
-                <tr>
-                    <td class="liste">Produit 2</td>
-                    <td class="liste">1</td>
-                    <td class="liste">50 €</td>
-                    <td class="liste">50 €</td>
-                </tr>
+
+                <?php 
+                    $total=0;
+                    
+                    $sql = "SELECT * FROM Commande Co, Commande_item Ci WHERE Co.id=Ci.idCommande AND Co.idUser='".$_SESSION["idUser"]."'";
+                    $result = $conn->query($sql);
+            
+                    if($result->num_rows > 0) {
+            
+                        while($row = $result->fetch_assoc()) { 
+                            $sql2="SELECT * FROM Plat WHERE id='".$row["idPlat"]."'";
+
+                            $result2 = $conn->query($sql2);
+                
+                            if($result2->num_rows > 0) {
+                                
+                                while($row2 = $result2->fetch_assoc()) {
+                                    $ntm=floatval($row["quantite"])*floatval($row2["prix"]);
+                                    echo "<tr>
+                                        <td>".$row2["nom"]."</td>
+                                        <td>".$row["quantite"]."</td>
+                                        <td>".$row2["prix"]."</td>
+                                        <td>".$ntm."</td>
+                                        </tr>
+                                    ";
+
+                                    $total += $ntm;
+                                }
+                            }
+                            else{
+                                echo "NOT WORKING SEARCH DATA PER PLATE";
+                            } 
+                        }
+                    
+                    }
+
+
+                    $sql = "DELETE FROM Commande_item WHERE idCommande='".$_SESSION["idPanier"]."'";
+                    $result = $conn->query($sql);
+
+                    if ($result === TRUE) {
+                        //echo "\nNew record created successfully";
+                    
+                    } 
+                    
+                    else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+
+
+
+                ?>
+
+                
+                
             </tbody>
             <tfoot>
+                <tr><td colspan="3">Livraison :</td>
+                    <td>12 €</td>
+                </tr>
                 <tr>
-                    <td class="liste" colspan="3">Total</td>
-                    <td class="liste">250 €</td>
+                    <td colspan="3">TOTAL : </td>
+                    <td><?php 
+                    $total += 12;
+                    echo $total; ?> €</td>
                 </tr>
             </tfoot>
         </table>

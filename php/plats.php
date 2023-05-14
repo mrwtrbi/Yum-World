@@ -14,7 +14,7 @@
     <div class="liste_produits">
 
         <?php
-             $sql = "SELECT * FROM Plat WHERE continent='".$_GET["c"]."'";
+             $sql = "SELECT * FROM Plat WHERE continent='".$_GET["c"]."' AND stock > 0";
              $result = $conn->query($sql);
 
                
