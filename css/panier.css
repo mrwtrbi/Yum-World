@@ -60,6 +60,16 @@
     transition: 0.2s;
 }
 
+.articles-panier img{
+    object-fit: cover;
+}
+
+.articles-panier a {
+   
+    width: 100%;
+    overflow: hidden;
+}
+
 .articles-panier:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border: none;
