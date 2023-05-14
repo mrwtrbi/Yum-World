@@ -1,11 +1,8 @@
-/*body {
+.facture {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
     background-color: #f4f4f4;
-  }
-  
-  .facture {
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
@@ -13,13 +10,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
   
-  h1 {
+  #titre-facture {
     text-align: center;
     color: #2C3E50;
     margin-bottom: 30px;
   }
   
-  h2 {
+  .fac-titre {
     color: #2C3E50;
   }
   
@@ -34,7 +31,7 @@
     border-collapse: collapse;
   }
   
-  th, td {
+  .liste {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
@@ -64,5 +61,3 @@
     display: flex;
     flex-shrink: 0;
   }
-
-  */
