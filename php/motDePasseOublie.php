@@ -4,8 +4,8 @@
 		include_once("head.php");
 	?>
 <head>
-	<script>
 	<title>Mot de passe oublié</title>
+	<script>
          function motdepasse() {
             alert("Nouveau mot de passe envoyé avec succès !");
             return true;
