@@ -17,7 +17,7 @@
 	<form>
 		<label>Adresse e-mail:</label><br>
 		<input type="email" id="email" name="email" placeholder="Adresse e-mail"><br><br>
-		<input type="submit" value="Envoyer"><br><br>
+		<input type="submit" style="background-color: blue; color: white;" value="Envoyer"><br><br>
 	</form>
 	<p><a href="../php/connexion.php">Retour à la page de connexion</a></p>
     </div>
