@@ -17,6 +17,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Installing MySQL
 RUN apt install -y mariadb-server
+RUN apt install -y dos2unix && dos2unix ./conf/mysql/init.sh
 RUN ./conf/mysql/init.sh
 
 # Installing and configuring PHP
