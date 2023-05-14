@@ -4,7 +4,7 @@
 		include_once("head.php");
 	?>
     <head>
-        <title>Nos plats</title>
+        <title>Plats</title>
     </head>
 
 <body>

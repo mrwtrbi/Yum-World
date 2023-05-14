@@ -4,7 +4,7 @@
 		include_once("head.php");
 	?>
     <head>
-        <title>Votre plat</title>
+        <title>Votre sélection</title>
         <script src="../js/recette.js"></script>
     </head>
 

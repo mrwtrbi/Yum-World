@@ -4,7 +4,7 @@
 		include_once("head.php");
 	?>
 	<head>
-		<title>YUM WORLD</title>
+		<title>Accueil</title>
 	</title>
 
 <body>

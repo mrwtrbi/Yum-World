@@ -38,13 +38,13 @@
                     <input type="radio" name="sexe" value="Femme"><label> Femme</label>
                     <input type="radio" name="sexe" value="Homme"><label> Homme</label></br></br>
                     <label><i class="fa-solid fa-globe-africa"></i> Pays :* </br></br><input type="text" name="pays" placeholder=" Pays" required></label></br></br>
-                    <label> Adresse :* </br></br><input type="text" name="adresse" placeholder=" Adresse" required></label></br></br>
-                    <label> Code postal, Ville:* </br></br><input type="text" name="" placeholder=" Code postal" required></label></br></br>
+                    <label> Adresse :* </br></br><input type="text" name="adresse" placeholder=" adresse" required></label></br></br>
+                    <label> Code postal, Ville:* </br></br><input type="text" name="" placeholder=" cp" required></label></br></br>
                     <div>
                         <label><i class="fa-solid fa-message"></i> Commentaires :</br></label>
                         <textarea class="text" name="commentaires" placeholder=" Tapez ici vos commentaires"></textarea></br></br>
                     </div>
-                    <i class="fa-solid fa-paper-plane"></i> <input id="button" style="background-color: blue; color: white;" type="button" value="Envoyer">
+                    <i class="fa-solid fa-paper-plane"></i> <input id="button" type="submit" value="Envoyer">
                 </div>
             </fieldset>
         </form>

@@ -2,9 +2,40 @@
 <html>
     <?php
 		include_once("head.php");
+
+        if(isset($_POST["co_but"])){
+            $username = $_POST["username"];
+            $password = $_POST["password"];
+
+
+
+            $sql = "SELECT * FROM Compte WHERE login='".$username."'";
+            $result = $conn->query($sql);
+
+            if($result->num_rows > 0) {
+    
+                while($row = $result->fetch_assoc()) { 
+                    if($row["mdp"]==$password){
+                        $_SESSION["connexion"]=1;
+                        $_SESSION["idUser"]=$row["id"];
+                        header("Location: moncompte.php");
+                    }
+                    else{
+                        echo "Mot de passer erroné";
+                    }
+                }
+            }
+
+            else{
+                echo "ID inexistant";
+            }
+
+
+
+        }
 	?>
 <head>
-	<title>Page de connexion</title>
+	<title>Connexion</title>
     
 </head>
 <body id="corps">
@@ -15,7 +46,7 @@
     <script src="../js/connexion.js"></script>
     <div id=forme>
 	<h1>Connexion</h1><br><br>
-	<form  id="connexion-form">
+	<form method="POST" id="connexion-form">
 		<label>Nom d'utilisateur ou adresse e-mail:</label><br>
         
 		<input type="text" id="username" name="username" ><br><br>
@@ -25,7 +56,7 @@
         
         <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
         </div>
-		<input type="submit" style="background-color: blue; color: white;" value="Connexion"><br><br>
+		<input type="submit" name='co_but' value="Connexion" style="color: black; width: 10em; height: 3em; border: 1px solid #ddd9d9; border-radius: 5px;"><br><br>
         
 	</form>
 	<p><a href="../php/motDePasseOublie.php">Mot de passe oublié?</a></p></br>
