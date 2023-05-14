@@ -45,6 +45,8 @@ const validateInputs = () => {
 
 
 /*Pour rendre l'oeil cliquable */
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const togglePassword = document.querySelector('#oeil');
     const mp = document.querySelector('#password');
@@ -54,4 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
       password.setAttribute('type', type);
       this.classList.toggle('fa-eye-slash');
     });
-  });
+});
+
+
+
+
+
+
