@@ -4,7 +4,7 @@
 		include_once("head.php");
 	?>
     <head>
-        <title>Conceptrices</title>
+        <title>Nos plats</title>
     </head>
 
 <body>
