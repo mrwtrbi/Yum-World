@@ -72,7 +72,7 @@ main {
 	
 	
 .main-content {
-	color: black;
+	color: #5284B3;
 	font-weight: bold;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -109,4 +109,9 @@ button {
 
 #logo-accueil {
 	width: 20%;
+}
+
+a {
+	/*text-decoration: none;*/	
+	color: #6c6b6b;
 }

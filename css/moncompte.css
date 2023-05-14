@@ -13,3 +13,16 @@
 #mc_Nom{
     font-size: 2em;
 }
+
+#deco-but{
+    color: black;
+    width: 10em;
+    height: 3em;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+}
+
+#deco-but:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
