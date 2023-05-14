@@ -44,7 +44,7 @@
                         <label><i class="fa-solid fa-message"></i> Commentaires :</br></label>
                         <textarea class="text" name="commentaires" placeholder=" Tapez ici vos commentaires"></textarea></br></br>
                     </div>
-                    <i class="fa-solid fa-paper-plane"></i> <input id="button" type="button" value="Envoyer">
+                    <i class="fa-solid fa-paper-plane"></i> <input id="button" style="background-color: blue; color: white;" type="button" value="Envoyer">
                 </div>
             </fieldset>
         </form>
