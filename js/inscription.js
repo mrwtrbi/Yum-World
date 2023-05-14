@@ -28,6 +28,20 @@ function valider_inscription(){
   var mail=document.getElementById("email");
   var mdp=document.getElementById("password");
   var valide=1;
+  var response="";
+
+  var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                response =  this.responseText;
+                console.log(response);
+            }
+        };
+        
+  xmlhttp.open("GET", "appel.php?e=" + mail.value, true);
+  xmlhttp.send();
+
+ 
 
   if(!verif_texte(prenom.value)){
     valide=0;
