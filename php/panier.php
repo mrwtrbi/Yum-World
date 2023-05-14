@@ -40,7 +40,7 @@
         <br><br>
         <p>Total : 20.50€</p>
         <br><br><br><br><br><br><br>
-        <input id="bouton-achat" type="button" value="Commander" onClick="../php/.href='commande_passee.php'"> 
+        <input id="bouton-achat" type="button" value="Commander" onClick="../php/.href='facture.php'"> 
     </div>
 </div>
 

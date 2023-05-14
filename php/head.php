@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="../css/inscription.css">
     <link rel="stylesheet" href="../css/motDePasseOublie.css">
     <link rel="stylesheet" href="../css/conceptrices.css">
+    <link rel="stylesheet" href="../css/facture.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
     <script src="../js/connexion.js"></script>
     <script src="../js/formulaire.js"></script>
