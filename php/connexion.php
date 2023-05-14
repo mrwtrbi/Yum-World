@@ -25,7 +25,7 @@
         
         <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
         </div>
-		<input type="submit" value="Connexion"><br><br>
+		<input type="submit" style="background-color: blue; color: white;" value="Connexion"><br><br>
         
 	</form>
 	<p><a href="../php/motDePasseOublie.php">Mot de passe oublié?</a></p></br>
