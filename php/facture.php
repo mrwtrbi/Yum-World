@@ -10,6 +10,9 @@
     <title>Facture</title>
 </head>
 <body>
+    <?php
+        include_once("header.php");
+    ?>
     <div class="facture">
       <img id="header-banniere-logo" src="../img/Logo.png" alt="Logo" class="logo">
         <h1 id="titre-facture">Facture</h1>
