@@ -8,9 +8,3 @@ function recette(){
         r.style.display = 'flex';
     }
 }
-
-function quantite(){
-    var qty=document.getElementById("qtt");
-
-    
-}
