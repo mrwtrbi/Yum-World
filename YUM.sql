@@ -1,7 +1,7 @@
 CREATE DATABASE YUM;
 DROP DATABASE IF EXISTS YUM;
 USE YUM;
-DROP TABLE Compte;
+DROP TABLE IF EXISTS Compte;
 
 CREATE TABLE Compte(
 	id VARCHAR(50) PRIMARY KEY,
@@ -29,15 +29,19 @@ CREATE TABLE Plat(
     lien_video text
 ); 
 
+SELECT * FROM Commande;
+SELECT * FROM Compte;
+
 
 CREATE TABLE Commande(
-	id INT PRIMARY KEY,
+	id INT PRIMARY KEY AUTO_INCREMENT,
     idUser VARCHAR(50),
     FOREIGN KEY fk_iduser(idUser) REFERENCES Compte(id)
 );
 
+ALTER TABLE Commande_item AUTO_INCREMENT=2;
 CREATE TABLE Commande_item(
-	id INT PRIMARY KEY,
+	id INT PRIMARY KEY AUTO_INCREMENT,
 	idCommande INT,
 	idPlat VARCHAR(50),
     quantite INT,
@@ -47,8 +51,10 @@ CREATE TABLE Commande_item(
 
 
 
+DROP TABLE Commande_item;
 DROP TABLE Commande;
-SELECT * FROM Plat ;
+DROP TABLE Compte;
+SELECT * FROM Commande;
 
 
 INSERT INTO Plat VALUES (
