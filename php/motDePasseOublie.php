@@ -4,8 +4,13 @@
 		include_once("head.php");
 	?>
 <head>
+	<script>
 	<title>Mot de passe oublié</title>
-    <script src="../js/motDepasseOublie.js"></script>
+         function motdepasse() {
+            alert("Nouveau mot de passe envoyé avec succès !");
+            return true;
+        }
+	</script>
 </head>
 <body>
     <?php
