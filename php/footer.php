@@ -3,11 +3,11 @@
 	<div class="colonne">
 	<h3>Plan du site</h3>
 	<ul>
-		<li><a href="#"><i class="fa-solid fa-earth-africa"></i> Afrique</a></li>
-		<li><a href="#"><i class="fa-solid fa-earth-americas"></i> Amérique</a></li>
-		<li><a href="#"><i class="fa-solid fa-earth-asia"></i> Asie</a></li>
-		<li><a href="#"><i class="fa-solid fa-earth-europe"></i> Europe</a></li>
-		<li><a href="#"><i class="fa-solid fa-earth-oceania"></i> Océanie</a></li>
+		<li><a href="plats.php?c=Afrique"><i class="fa-solid fa-earth-africa"></i> Afrique</a></li>
+		<li><a href="plats.php?c=Amerique"><i class="fa-solid fa-earth-americas"></i> Amérique</a></li>
+		<li><a href="plats.php?c=Asie"><i class="fa-solid fa-earth-asia"></i> Asie</a></li>
+		<li><a href="plats.php?c=Europe"><i class="fa-solid fa-earth-europe"></i> Europe</a></li>
+		<li><a href="plats.php?c=Oceanie"><i class="fa-solid fa-earth-oceania"></i> Océanie</a></li>
 	</ul>
 	</div>
 
