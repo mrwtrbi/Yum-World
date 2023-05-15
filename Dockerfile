@@ -1,6 +1,15 @@
 # Use a lightweight Debian 11 image
 FROM debian:11-slim
 
+RUN apt-get update && \
+    apt-get install -y locales && \
+    echo "fr_FR.UTF-8 UTF-8" > /etc/locale.gen && \
+    locale-gen
+
+ENV LANG fr_FR.UTF-8
+ENV LANGUAGE fr_FR.UTF-8
+ENV LC_ALL fr_FR.UTF-8
+
 # Set the working directory to /var/www/yum-world
 WORKDIR /var/www/yum-world
 
@@ -14,12 +23,9 @@ RUN service apache2 start
 RUN apt install -y ufw
 RUN ufw allow in "WWW Full"
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN echo "AddDefaultCharset UTF-8" >> /etc/apache2/apache2.conf
-RUN echo "AddCharset UTF-8 .html .php" >> /etc/apache2/apache2.conf
 
 # Installing MySQL
 RUN apt install -y mariadb-server
-RUN apt install -y dos2unix && dos2unix ./conf/mysql/init.sh
 RUN ./conf/mysql/init.sh
 
 # Installing and configuring PHP
