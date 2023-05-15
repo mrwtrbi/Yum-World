@@ -25,9 +25,6 @@ CREATE TABLE Plat(
     lien_video text
 ); 
 
---DROP TABLE Commande_item;
---DROP TABLE Commande;
---DROP TABLE Compte;
 
 
 CREATE TABLE Commande(
@@ -242,7 +239,7 @@ Les raviolis chinois sont non seulement délicieux, mais sont également un alim
 '../img/db_images/PLAT-1682852198w1gGa',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/MEBdzCm93bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-16832012583TyaR',
 'Asie',
 'Sushi',
@@ -264,7 +261,7 @@ Huile de sésame",
 '../img/db_images/PLAT-16832012583TyaR',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/BUYbPK_yPlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683360773YeiKJ',
 'Asie',
 'Tteokbokki',
@@ -285,7 +282,7 @@ Sauce soja\n
 '../img/db_images/PLAT-1683360773YeiKJ',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/aGKMwZS6zCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683360978PnDDO',
 'Asie',
 'Butter Chicken',
@@ -317,7 +314,7 @@ Riz",
 '<iframe class="video_recette" src="https://www.youtube.com/embed/crU6euw7bOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-16833611168SCt9",
 'Asie',
 'Bubble Tea',
@@ -342,7 +339,7 @@ Lait",
 '<iframe class="video_recette" src="https://www.youtube.com/embed/nD2k199_HBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683361311Fa2Xm',
 'Amérique',
 'Hamburger',
@@ -366,7 +363,7 @@ Ketchup",
 '../img/db_images/PLAT-1683361311Fa2Xm',
 "<iframe class='video_recette' src='https://www.youtube.com/embed/yeMdYuJmLYg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>");
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683362063W6Goo',
 'Amérique',
 'Chili con Carne',
@@ -391,7 +388,7 @@ Huile d'olive\n
 '<iframe class="video_recette" src="https://www.youtube.com/embed/wPWpmEIM37U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683362299gwawi',
 'Amérique',
 'Rocoto Relleno',
@@ -424,7 +421,7 @@ INSERT INTO PLAT VALUES(
 '<iframe class="video_recette" src="https://www.youtube.com/embed/8y1JLwb71Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683362624ZJu6e',
 'Amérique',
 'Tacos',
@@ -453,7 +450,7 @@ Huile d'olive\n
 '<iframe class="video_recette" src="https://www.youtube.com/embed/tXfauii1tIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683362826NGDnK',
 'Amérique',
 'Jalapeños',
@@ -477,7 +474,7 @@ Chapelure",
 '../img/db_images/PLAT-1683362826NGDnK',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/1ONxQVDfMKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683196886vTx9F',
 'Europe',
 'Fish & Chips',
@@ -498,7 +495,7 @@ Huile\n
 '../img/db_images/PLAT-1683196886vTx9F',
 "<iframe class='video_recette' src='https://www.youtube.com/embed/jbjITn20oLo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>");
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683363170WSjuW',
 'Europe',
 'La raclette',
@@ -516,7 +513,7 @@ Appareil à raclette",
 '../img/db_images/PLAT-1683363170WSjuW',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/2FaL2nB3OAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683363303qNd4L',
 'Europe',
 'Paëlla',
@@ -542,7 +539,7 @@ INSERT INTO PLAT VALUES(
 '../img/db_images/PLAT-1683363303qNd4L',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/jM7v9JdH5v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-1683363404wSYja",
 'Europe',
 'Pizza de la Mama',
@@ -563,7 +560,7 @@ Quelques feuilles de Basilic",
 '../img/db_images/PLAT-1683363404wSYja',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/7bYSNpvcaiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-1683363732xCfzl",
 'Europe',
 'Moussaka',
@@ -590,7 +587,7 @@ Huile d'olive\n
 '../img/db_images/PLAT-1683363732xCfzl',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/OFPv54q8yIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-16833639674k6Ws",
 'Océanie',
 'Poke',
@@ -618,7 +615,7 @@ INSERT INTO PLAT VALUES(
 '../img/db_images/PLAT-16833639674k6Ws',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/ez4zQr6CSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-1683364149gsp3h",
 'Océanie',
 'Whitebait',
@@ -638,7 +635,7 @@ Huile à frire\n
 '../img/db_images/PLAT-1683364149gsp3h',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/TQZSEAP4VhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-1683364254bPs6I',
 'Océanie',
 'Meat-Pie',
@@ -664,7 +661,7 @@ Beurre\n
 '../img/db_images/PLAT-1683364254bPs6I',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/EL1-uMt2oD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 "PLAT-1683364480ccC88",
 'Océanie',
 'Poulet Fafa',
@@ -690,7 +687,7 @@ INSERT INTO PLAT VALUES(
 '../img/db_images/PLAT-1683364480ccC88',
 '<iframe class="video_recette" src="https://www.youtube.com/embed/bBLjEli3Ykc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 
-INSERT INTO PLAT VALUES(
+INSERT INTO Plat VALUES(
 'PLAT-16833646510Cts0',
 'Océanie',
 'Kokoda',

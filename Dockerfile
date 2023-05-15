@@ -14,6 +14,8 @@ RUN service apache2 start
 RUN apt install -y ufw
 RUN ufw allow in "WWW Full"
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN echo "AddDefaultCharset UTF-8" >> /etc/apache2/apache2.conf
+RUN echo "AddCharset UTF-8 .html .php" >> /etc/apache2/apache2.conf
 
 # Installing MySQL
 RUN apt install -y mariadb-server

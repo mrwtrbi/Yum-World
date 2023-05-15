@@ -1,7 +1,7 @@
 <?php
     session_start();
     $servername = "localhost";
-    $username = "root";
+    $username = "yum-user";
     $password = "cytech0001";
     $dbname = "YUM";
     

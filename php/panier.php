@@ -25,9 +25,7 @@
     <div id="panier-gauche">
 
         <?php
-          
-
-            //Attention requetes dans une requete
+        
             $sql="SELECT * FROM Commande_item Ci, Commande Co WHERE Ci.idCommande=Co.id AND Co.idUser='".$_SESSION["idUser"]."'";
             $total=0;
             $nb_article=0;

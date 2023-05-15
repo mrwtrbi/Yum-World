@@ -10,8 +10,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-
-
-
-
-

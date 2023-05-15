@@ -63,7 +63,7 @@
     ?>
     
     <form method="POST">
-        <input type='submit' id='deco_but' name='deco_but' value='Deconnexion'>
+        <input type='submit' style="background-color: #5284B3;" id='deco_but' name='deco_but' value='Deconnexion'>
     </form>
     <?php
         include_once("footer.php");
