@@ -54,9 +54,9 @@
         <div>
 		<input type="password" id="password" name="password">
         
-        <i class="fas fa-eye toggle-password" id= "oeil"></i><br><br>
+        <i class="fas fa-eye toggle-password" id= "oeil1"></i><br><br>
         </div>
-		<input type="submit" name='co_but' value="Connexion"><br><br>
+		<input id="bout-connex" type="submit" name='co_but' value="Connexion"><br><br>
         
 	</form>
 	<p><a href="../php/motDePasseOublie.php">Mot de passe oublié?</a></p></br>

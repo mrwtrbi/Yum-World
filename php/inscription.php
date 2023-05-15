@@ -89,7 +89,7 @@ if (isset($_POST["submit_but"])) {
 			</script>
 
 
-			<input type="submit" name="submit_but" value="Validation">
+			<input id="bout-valid" type="submit" name="submit_but" value="Validation">
 		</form>
 	</div>
 	<?php

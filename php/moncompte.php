@@ -38,9 +38,11 @@
 
             while($row = $result->fetch_assoc()) { 
                 echo "<div id='mc_infos'>
+                    <br><br><br><br>
                     <p id='mc_Nom'>".$row["nom"]."</p>
                     <p id='mc_Prenom'>".$row["prenom"]."</p><br>
                     <p id='mc_Mail'>".$row["login"]."</p>
+                    <br><br><br><br>
                 </div>";
             }
         }
@@ -63,7 +65,7 @@
     ?>
     
     <form method="POST">
-        <input type='submit' style="background-color: #5284B3;" id='deco_but' name='deco_but' value='Deconnexion'>
+        <input id="deco_but" style="padding:1%; border-radius: 5px;" type='submit' name='deco_but' value='Deconnexion'>
     </form>
     <?php
         include_once("footer.php");
