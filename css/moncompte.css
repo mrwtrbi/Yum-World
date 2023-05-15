@@ -15,9 +15,7 @@
 }
 
 #deco-but{
-    color: black;
-    width: 10em;
-    height: 3em;
+    padding: 1%;
     border: 1px solid #ddd9d9;
     border-radius: 5px;
 }

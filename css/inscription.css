@@ -24,3 +24,14 @@
     right: 30px;
     cursor: pointer;
   }
+
+#bout-valid{
+  padding: 1%;
+  border: 1px solid #ddd9d9;
+  border-radius: 5px;
+}
+
+#bout-valid:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}

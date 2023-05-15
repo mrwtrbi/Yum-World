@@ -26,5 +26,14 @@
   cursor: pointer;
 }
 
-  
+#bout-connex{
+  padding: 1%;
+  border: 1px solid #ddd9d9;
+  border-radius: 5px;
+}
+
+#bout-connex:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
   
