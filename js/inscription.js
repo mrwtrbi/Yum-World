@@ -30,16 +30,7 @@ function valider_inscription(){
   var valide=1;
   var response="";
 
-  var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                response =  this.responseText;
-                console.log(response);
-            }
-        };
-        
-  xmlhttp.open("GET", "appel.php?e=" + mail.value, true);
-  xmlhttp.send();
+ 
 
  
 
@@ -71,6 +62,28 @@ function valider_inscription(){
     mdp.style.border="1px solid gray";
   }
 
+  //////La requete doit etre revenue avant
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          response =  this.responseText;
+          if(response=="existe"){
+            valide=0;
+            
+            mail.style.border='1px solid red';
+            alert("Mail déjà utilisé !");
+            return false;
+          }
+
+          else if(response=="non"){
+            mail.style.border='1px solid gray';
+          }
+      }
+  };
+  
+  xmlhttp.open("GET", "appel.php?e=" + mail.value, true);
+  xmlhttp.send();
+
   if(valide==0){
     return false;
   }
@@ -93,5 +106,3 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.toggle('fa-eye-slash');
     });
 });
-
-
